@@ -1,0 +1,82 @@
+.c-TouchSlider {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &__slides {
+    display: flex;
+  
+    &--transition {
+      transition: transform 0.25s;
+    }
+
+    & > * {
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__navButton {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    display: block;
+    outline: none;
+    background-color: grey;
+
+    &--active {
+      background-color: black;
+    }
+  }
+
+  &__arrows {
+    width: 100%;
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: calc(50% - 35px);
+    z-index: 1;
+    display: none;
+
+    &--noNav {
+      top: calc(50% - 20px);
+    }
+  }
+
+  &__arrow {
+    background: $white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    position: absolute;
+    transition: box-shadow .2s linear;
+    padding: 0;
+    top: 0;
+  
+    &:hover {
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+  
+    &--left {   
+      left: 0;
+    }
+  
+    &--right {
+      right: 0;
+    }
+  }
+}
