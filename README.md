@@ -4,7 +4,7 @@ A simple, dependency-free, touch enabled slider for React.
 
 RTS is a TypeScript-ready version of [react-slider](https://github.com/Stanko/react-slider) in functional component form. 
 
-Demo (coming soon)
+[Demo](https://react-touch-slider.netlify.app/)
 
 ## Usage
 
@@ -29,7 +29,7 @@ return (
 
 Options are passed as props.
 
-`loop: false` - Should arrow navigation loop around
-`selected: 0` - Slide to be selected
-`showArrows: true` - Show arrows navigation
+`loop: false` - Should arrow navigation loop around\
+`selected: 0` - Slide to be selected\
+`showArrows: true` - Show arrows navigation\
 `showNav: true` - Show pager navigation

@@ -25,6 +25,9 @@
     justify-content: center;
     margin: 0;
     list-style: none;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, 0);
   }
 
   &__navButton {
@@ -35,10 +38,10 @@
     border-radius: 50%;
     display: block;
     outline: none;
-    background-color: grey;
+    background-color: white;
 
     &--active {
-      background-color: black;
+      background-color: #1a1a1a;
     }
   }
 
@@ -47,17 +50,12 @@
     height: 0;
     left: 0;
     position: absolute;
-    top: calc(50% - 35px);
+    top: calc(50% - 20px);
     z-index: 1;
-    display: none;
-
-    &--noNav {
-      top: calc(50% - 20px);
-    }
   }
 
   &__arrow {
-    background: $white;
+    background: white;
     border: none;
     width: 40px;
     height: 40px;
@@ -66,6 +64,8 @@
     transition: box-shadow .2s linear;
     padding: 0;
     top: 0;
+    font-size: 1.5rem;
+    cursor: pointer;
   
     &:hover {
       box-shadow: 0 0 10px rgba(0,0,0,0.2);

@@ -77,7 +77,7 @@ const TouchSlider = (props) => {
   }
 
   const renderNav = () => {
-    const nav = props.children.map(i => {
+    const nav = props.children.map((slide, i) => {
       return (
         <li
           className={(i === lastIndex) ? 'c-TouchSlider__navButton c-TouchSlider__navButton--active' : 'c-TouchSlider__navButton'}
