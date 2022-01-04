@@ -29,7 +29,7 @@ return (
 
 Options are passed as props.
 
-- `loop: false` - Should arrow navigation loop around\
-- `selected: 0` - Slide to be selected\
-- `showArrows: true` - Show arrows navigation\
-- `showNav: true` - Show pager navigation
+`loop: false` - Should arrow navigation loop around\
+`selected: 0` - Slide to be selected\
+`showArrows: true` - Show arrows navigation\
+`showNav: true` - Show pager navigation
