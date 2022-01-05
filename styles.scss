@@ -57,14 +57,14 @@
   &__arrow {
     background: white;
     border: none;
-    width: 40px;
+    width: 50px;
     height: 40px;
     outline: none;
     position: absolute;
     transition: box-shadow .2s linear;
     padding: 0;
     top: 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
   
     &:hover {

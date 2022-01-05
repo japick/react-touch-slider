@@ -99,11 +99,11 @@ const TouchSlider = (props) => {
         {props.loop || lastIndex > 0 ?
           <button
             className='[ c-TouchSlider__arrow c-TouchSlider__arrow--left ]'
-            onClick={(event) => goToSlide(lastIndex - 1, event)}></button> : null }
+            onClick={(event) => goToSlide(lastIndex - 1, event)}>Prev</button> : null }
         {props.loop || lastIndex < props.children.length - 1 ?
           <button
             className='[ c-TouchSlider__arrow c-TouchSlider__arrow--right ]'
-            onClick={(event) => goToSlide(lastIndex + 1, event)}></button> : null }
+            onClick={(event) => goToSlide(lastIndex + 1, event)}>Next</button> : null }
       </div>
     )
   }
