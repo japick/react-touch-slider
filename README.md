@@ -17,9 +17,9 @@ return (
             loop={true}
             showNav={true}
             showArrows={true}>
-            {someProp.map(x, i) => {
+            {someProp.map((x, i) => {
                 return <img key={i} src="#" />
-            }}
+            })}
         </TouchSlider>
     </>
 )
